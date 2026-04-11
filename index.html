@@ -30,7 +30,6 @@
         .tokopedia-bg:hover {
             background-color: #008f4c;
         }
-        /* Style untuk video container custom */
         .video-container {
             position: relative;
             width: 100%;
@@ -91,8 +90,9 @@
                     <span class="text-xl font-extrabold tracking-tight">Arah<span class="text-indigo-600">Langkah</span></span>
                 </div>
                 <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                    <a href="#about" class="hover:text-indigo-600 transition-colors">Tentang Kami</a>
-                    <a href="#packages" class="hover:text-indigo-600 transition-colors">Paket Layanan</a>
+                    <a href="#problem" class="hover:text-indigo-600 transition-colors">Masalah</a>
+                    <a href="#solution" class="hover:text-indigo-600 transition-colors">Solusi</a>
+                    <a href="#packages" class="hover:text-indigo-600 transition-colors">Paket</a>
                 </div>
                 <div>
                     <a href="#packages" class="bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-indigo-700 transition-all shadow-md shadow-indigo-200">Mulai Tes</a>
@@ -101,7 +101,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- [HERO] Pendahuluan Singkat -->
     <section class="pt-32 pb-20 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <span class="inline-block px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-sm font-bold mb-6 tracking-wide uppercase">Tentukan Masa Depanmu Hari Ini</span>
@@ -110,21 +110,19 @@
                 <span class="gradient-text">Temukan Bakat Sejatimu.</span>
             </h1>
             <p class="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-                Kami membantu ribuan orang menemukan potensi terbaik mereka melalui metode tes yang akurat dan bimbingan ahli. Pilih jalan pintas menuju kesuksesanmu bersama ArahLangkah.
+                Navigasi akurat menuju potensi terbaik Anda melalui metode psikologi teruji dan bimbingan ahli.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
                 <a href="#packages" class="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-indigo-200">Pilih Paket Sekarang</a>
-                <a href="#about" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-colors">Pelajari Lebih Lanjut</a>
+                <a href="#problem" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-colors">Pelajari Lebih Lanjut</a>
             </div>
 
-            <!-- Bagian Video Player Custom (Redirect ke App/Tab Baru) -->
             <div class="max-w-md mx-auto">
                 <p class="mb-6 text-slate-500 font-semibold text-lg">Tonton ini sebelum beli 👇</p>
                 <div class="bg-white rounded-[2.5rem] p-4 shadow-2xl border border-slate-100">
                     <div id="videoWrapper" class="video-container">
-                        <!-- Langsung mengarah ke aplikasi atau tab baru -->
                         <div class="video-placeholder" onclick="openYoutubeVideo()">
-                            <img src="https://img.youtube.com/vi/gYKjoNpS6JE/maxresdefault.jpg" alt="Thumbnail Video ArahLangkah" onerror="this.src='https://img.youtube.com/vi/gYKjoNpS6JE/hqdefault.jpg'">
+                            <img src="https://img.youtube.com/vi/gYKjoNpS6JE/maxresdefault.jpg" alt="" onerror="this.src='https://img.youtube.com/vi/gYKjoNpS6JE/hqdefault.jpg'">
                             <div class="play-button-overlay">
                                 <svg class="w-10 h-10 text-indigo-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z"/>
@@ -137,54 +135,115 @@
         </div>
     </section>
 
-    <!-- Masalah & Solusi Section -->
-    <section id="about" class="py-20 bg-white">
+    <!-- [PROBLEM] Mengidentifikasi Masalah -->
+    <section id="problem" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Apakah Anda merasa...</h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <div class="mt-1 w-5 h-5 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center">
-                                <span class="text-red-600 font-bold text-xs">✕</span>
-                            </div>
-                            <p class="text-slate-600">Terjebak di pekerjaan atau jurusan yang tidak membuat Anda bahagia?</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="mt-1 w-5 h-5 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center">
-                                <span class="text-red-600 font-bold text-xs">✕</span>
-                            </div>
-                            <p class="text-slate-600">Bingung apa sebenarnya kelebihan yang Anda miliki dibandingkan orang lain?</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="mt-1 w-5 h-5 rounded-full bg-red-100 flex-shrink-0 flex items-center justify-center">
-                                <span class="text-red-600 font-bold text-xs">✕</span>
-                            </div>
-                            <p class="text-slate-600">Khawatir menghabiskan waktu bertahun-tahun di jalur yang salah?</p>
-                        </li>
-                    </ul>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Kenapa Banyak Orang Gagal Merasa Puas?</h2>
+                <p class="text-slate-600">Mungkin Anda sedang mengalami salah satu dari ini:</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4 font-bold">1</div>
+                    <p class="text-slate-700 font-medium">Terjebak di pekerjaan atau jurusan yang terasa asing dan melelahkan.</p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <h3 class="text-2xl font-bold mb-4 text-indigo-600 italic">"Cara terbaik memprediksi masa depan adalah dengan menemukannya sendiri."</h3>
-                    <p class="text-slate-600 mb-6">ArahLangkah hadir untuk memberikan navigasi. Melalui kombinasi teknologi psikologi dan bimbingan personal, kami membantu Anda membuka pintu kesuksesan yang selama ini terkunci.</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-200 rounded-full"></div>
-                        <div>
-                            <p class="font-bold text-slate-900">Dr. Andi Wijaya</p>
-                            <p class="text-sm text-slate-500">Psikolog</p>
-                        </div>
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4 font-bold">2</div>
+                    <p class="text-slate-700 font-medium">Bingung menentukan kelebihan unik yang bisa dijual di industri saat ini.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4 font-bold">3</div>
+                    <p class="text-slate-700 font-medium">Khawatir menghabiskan usia produktif di jalur yang sebenarnya buntu.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4 font-bold">4</div>
+                    <p class="text-slate-700 font-medium">Masih belum paham "Siapa Saya Sebenarnya?"</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4 font-bold">5</div>
+                    <p class="text-slate-700 font-medium">Tidak tahu arah yang tepat untuk melanjutkan pendidikan.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-4 font-bold">6</div>
+                    <p class="text-slate-700 font-medium">Bingung terhadap bakat & potensi Anak dan Remaja/pelajar yang belum kelihatan.</p>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- [AMPLIFY] Memperjelas Konsekuensi -->
+    <section class="py-20 bg-indigo-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 italic">"Setiap hari yang Anda lewatkan tanpa mengenal bakat diri, adalah hari yang terbuang untuk kesuksesan orang lain."</h2>
+            <p class="text-indigo-100 text-lg leading-relaxed mb-8">
+                Tanpa navigasi, Anda hanya berjalan di tempat. Bayangkan 10 tahun dari sekarang, Anda melihat orang lain yang memulai dengan Anda sudah jauh di depan, hanya karena mereka tahu ke mana harus melangkah sejak awal.
+            </p>
+            <p class="text-white font-bold text-xl">Jangan biarkan ketidakpastian menghancurkan potensi besar Anda.</p>
+        </div>
+    </section>
+
+    <!-- [SOLUTION] Mengenalkan Solusi -->
+    <section id="solution" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-indigo-600">ArahLangkah: Navigasi Karir & Bakat Anda</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Kami menggabungkan data sains psikometri dengan bimbingan personal untuk memberikan peta jalan (roadmap) yang nyata bagi masa depan Anda.
+                </p>
+                <ul class="space-y-4 text-slate-700 font-medium">
+                    <li class="flex items-center gap-3">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Metode Tes Profesional
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Laporan Analisis Mendalam & Personal
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Bimbingan Ahli Langsung
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-[3rem] border border-slate-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-slate-300 rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-xl">Aldo Imanuel</p>
+                        <p class="text-slate-500">Founder</p>
                     </div>
+                </div>
+                <p class="text-slate-600 italic leading-relaxed">
+                    "Tujuan kami sederhana: memastikan tidak ada lagi talenta hebat yang mati sia-sia karena salah memilih jurusan, lingkungan atau pekerjaan."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- [TRANSFORMATION] Bukti & Hasil -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Transformasi Mereka Bersama ArahLangkah</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-3xl card-shadow">
+                    <p class="text-slate-600 italic mb-4">"Dulu saya merasa gagal sebagai desainer, ternyata bakat saya ada di analisa data. Setelah pindah posisi, gaji saya naik 3x lipat dalam setahun!"</p>
+                    <p class="font-bold">- Maya, Alumni Digital Starter</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl card-shadow">
+                    <p class="text-slate-600 italic mb-4">"Sesi konsultasi privat membuka mata saya tentang potensi leadership yang tidak pernah saya sadari. Sekarang saya memimpin tim di perusahaan multinasional."</p>
+                    <p class="font-bold">- Budi, Alumni VIP Package</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Paket Harga Section -->
-    <section id="packages" class="py-24 px-4 bg-slate-50">
+    <!-- [OFFER] Penawaran Spesifik -->
+    <section id="packages" class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Pilih Paket Investasi Masa Depanmu</h2>
-                <p class="text-slate-600 max-w-xl mx-auto">Tersedia berbagai pilihan yang disesuaikan dengan kebutuhan eksplorasi potensi Anda.</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ambil Langkah Pertama Anda</h2>
+                <p class="text-slate-600 max-w-xl mx-auto">Investasi terkecil dengan dampak terbesar untuk karir Anda.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 items-stretch mb-12">
@@ -196,7 +255,6 @@
                     </div>
                     <div class="mb-8">
                         <span class="text-4xl font-extrabold">Rp149rb</span>
-                        <span class="text-slate-400 text-sm italic">/ Sekali bayar</span>
                     </div>
                     <ul class="space-y-4 mb-10 text-slate-600 flex-grow">
                         <li class="flex items-center gap-3">
@@ -206,10 +264,6 @@
                         <li class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             Akses Website Tes Bakat Premium
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Hasil Analisis Otomatis
                         </li>
                     </ul>
                     <a href="https://lynk.id/digstore/roxmykl6o22l/checkout" target="_blank" class="w-full py-4 bg-slate-100 text-slate-900 font-bold rounded-2xl hover:bg-slate-200 transition-colors block text-center">Daftar Sekarang</a>
@@ -224,7 +278,6 @@
                     </div>
                     <div class="mb-8">
                         <span class="text-4xl font-extrabold">Rp299rb</span>
-                        <span class="text-slate-400 text-sm italic">/ Sesi</span>
                     </div>
                     <ul class="space-y-4 mb-10 text-slate-600 font-medium flex-grow">
                         <li class="flex items-center gap-3">
@@ -234,10 +287,6 @@
                         <li class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             Konsultasi Privat via WhatsApp
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Action Plan Karir Kustom
                         </li>
                     </ul>
                     <a href="https://lynk.id/digstore/o3586x8vm4dm/checkout?token=cGFyYW1zPSU1QiU1RCZiaWRfcHJpY2U9MCZxdHlfcHJvZD0xJnNlc3NpZD0mdG90YWxfcHJpY2U9JnRvdGFsX3VuaXQ9" target="_blank" class="w-full py-4 bg-indigo-600 text-white font-bold rounded-2xl hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 block text-center">Dapatkan Sesi Privat</a>
@@ -251,7 +300,6 @@
                     </div>
                     <div class="mb-8">
                         <span class="text-4xl font-extrabold">Rp597rb</span>
-                        <span class="text-slate-400 text-sm italic">/ Paket Lengkap</span>
                     </div>
                     <ul class="space-y-4 mb-10 text-slate-300 flex-grow">
                         <li class="flex items-center gap-3">
@@ -262,24 +310,18 @@
                             <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             Produk Fisik (Kit Tes & Merchandise)
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Seluruh Fitur Premium Selamanya
-                        </li>
                     </ul>
                     <a href="https://lynk.id/digstore/lwkd68xd5pvo/checkout?token=cGFyYW1zPSU1QiU1RCZiaWRfcHJpY2U9MCZxdHlfcHJvZD0xJnNlc3NpZD0mdG90YWxfcHJpY2U9JnRvdGFsX3VuaXQ9" target="_blank" class="w-full py-4 bg-white text-slate-900 font-bold rounded-2xl hover:bg-indigo-50 transition-colors block text-center mt-auto">Booking Sekarang</a>
                 </div>
             </div>
 
-            <!-- Bagian Marketplace -->
+            <!-- [RESPONSE] Marketplace Call to Action -->
             <div class="max-w-2xl mx-auto pt-8 text-center border-t border-slate-200">
-                <p class="text-sm text-slate-500 mb-6 font-medium">atau bisa beli di toko online kesayangan anda :</p>
+                <p class="text-sm text-slate-500 mb-6 font-medium uppercase tracking-widest">atau beli melalui Marketplace :</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-6 px-4">
-                    <!-- Shopee Button - Ditambahkan padding internal dan gap responsif -->
                     <a href="https://s.shopee.co.id/8AS0Fwz2Dj" target="_blank" class="w-full sm:flex-1 max-w-xs mx-auto sm:mx-0 shopee-bg text-white py-4 px-6 rounded-2xl transition-all hover:scale-105 flex items-center justify-center shadow-lg shadow-red-200 text-sm font-bold">
                         Beli di Shopee
                     </a>
-                    <!-- Tokopedia Button - Ditambahkan padding internal dan gap responsif -->
                     <a href="https://vt.tokopedia.com/t/ZS9L1NAcR753y-qrSyX" target="_blank" class="w-full sm:flex-1 max-w-xs mx-auto sm:mx-0 tokopedia-bg text-white py-4 px-6 rounded-2xl transition-all hover:scale-105 flex items-center justify-center shadow-lg shadow-green-200 text-sm font-bold">
                         Beli di Tokopedia
                     </a>
@@ -288,6 +330,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-white border-t border-slate-100 py-12">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex items-center justify-center gap-2 mb-6">
@@ -301,15 +344,12 @@
     </footer>
 
     <script>
-        // Fungsi untuk mengarahkan pengguna ke YouTube
         function openYoutubeVideo() {
-            // Tautan video asli (format standar agar bisa memicu deep link ke aplikasi di HP)
             const videoUrl = 'https://www.youtube.com/watch?v=gYKjoNpS6JE';
             window.open(videoUrl, '_blank');
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Smooth Scroll untuk anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
